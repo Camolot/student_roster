@@ -4,16 +4,11 @@ describe('pizza', function() {
     //topping
     //size
 
-    it("it determines the cost of pepperoni", function() {
-      expect(pizza("pepperoni")).to.equal("$.50");
-    });
+    // it("it determines the cost of pepperoni", function() {
+    //   expect(pizza("pepperoni")).to.equal(1);
+    // });
 
-    // <head><title>Pizza Place or Whatever</title>
-    //   <script>
-    //     function makeorder()
-    //     {
-    //       document.pizzaform.ordertextarea.value="A Test Of Some Description";
-    //     }
-    //   </script>
-    // </head>
+    it("it determines the total cost and returns the number", function() {
+      expect(pizza(1.5, 3.5, 3)).to.equal(15);
+    })
 });
